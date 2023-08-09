@@ -8,7 +8,7 @@ export default function Todolist() {
 
   function addactivity() {
     setlist((list) => {
-      const newlist = [...list, { activity, completed: false }]; // Store completed status in the list item
+      const newlist = [...list, { activity, completed: false }]; 
       console.log(newlist);
       setactivity('');
       return newlist;
@@ -30,8 +30,8 @@ export default function Todolist() {
   function taskcompleted(id, completed) {
     setlist((prevList) => {
       const updatedList = [...prevList];
-      updatedList[id].completed = !completed; // Toggle completed status
-      settaskcomplete(task + (completed ? -1 : 1)); // Increment or decrement task count based on completed status
+      updatedList[id].completed = !completed; 
+      settaskcomplete(task + (completed ? -1 : 1));
       return updatedList;
     });
   }
