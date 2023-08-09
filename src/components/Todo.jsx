@@ -7,7 +7,7 @@ export default function Todo({ activity, id, Remove, taskcompleted, completed })
   }
 
   function handlechange() {
-    taskcompleted(id, completed); // Pass id and current completed status to the parent component
+    taskcompleted(id, completed); 
   }
 
   return (
